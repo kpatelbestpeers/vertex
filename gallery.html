@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <title>School</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="PeersTrack" />
+  <meta property="og:title" content="Template" />
+  <meta property="og:type" content="website" />
+  <meta property="keyword" content="Template" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
+</head>
+
+<body class="m-0 font-sans text-sm lg:text-base antialiased font-normal leading-default bg-white text-[#292929]"
+  style="font-family: 'Montserrat', serif">
+  <header class="headerfix bg-[#edf3f3] fixed top-0 w-full z-50 shadow">
+    <div class="flex items-center justify-between h-20 gap-2 md:gap-3 py-3 px-3 md:px-6">
+      <div class="lg:order-1 max-w-[130px] md:max-w-[250px] block">
+        <a href="index.html" class="text-[#ff561d] text-xl md:text-2xl flex items-center">
+          <span class=" font-bold text-[#0070b6] pe-2 me-2 uppercase">Design 
+          </span>School
+        </a>
+      </div>
+      <nav id="navbar" class="order-3 lg:order-2 flex items-center">
+        <div id="nav-click" class="z-50 block cursor-pointer lg:hidden">
+          <i class="fa-solid fa-bars text-[#292929] text-2xl"></i>
+        </div>
+        <ul id="nav-show"
+          class="px-4 lg:px-0 hidden lg:flex lg:items-center bg-white lg:bg-transparent absolute lg:relative right-0 top-0 w-[300px] lg:w-auto h-screen lg:h-auto shadow-[1px_0_6px_rgba(0,0,0,.2)] lg:shadow-none toggle-out">
+          <li class="px-0 py-2 border-b lg:px-2 lg:py-0 border-white/10 lg:border-0 last:border-0">
+            <a href="index.html"
+              class="relative px-0 lg:px-1 xl:px-3 py-0 lg:py-2 flex lg:justify-center duration-[0.3s] font-normal text-lg lg:text-base text-[#292929] hover:text-[#ff561d] before:content-[''] before:bg-[#ff561d]/70 before:h-0.5 before:w-full before:transition-[all_0.3s_ease-in-out_0s] before:invisible before:absolute before:block before:bottom-0 before:scale-x-0 hover:before:scale-x-100 hover:before:visible">Home</a>
+          </li>
+          <li class="group px-0 py-2 border-b lg:px-2 lg:py-0 border-white/10 lg:border-0 last:border-0 nav-links">
+            <a href="about.html"
+              class="relative px-0 lg:px-1 xl:px-3 py-0 lg:py-2 flex lg:justify-center duration-[0.3s] font-normal text-lg lg:text-base text-[#292929] hover:text-[#ff561d] before:content-[''] before:bg-[#ff561d]/70 before:h-0.5 before:w-full before:transition-[all_0.3s_ease-in-out_0s] before:invisible before:absolute before:block before:bottom-0 before:scale-x-0 hover:before:scale-x-100 hover:before:visible">About
+            </a>
+          </li>
+          <li class="px-0 py-2 border-b lg:px-2 lg:py-0 border-white/10 lg:border-0 last:border-0">
+            <a href="gallery.html"
+              class="relative px-0 lg:px-1 xl:px-3 py-0 lg:py-2 flex lg:justify-center duration-[0.3s] font-normal text-lg lg:text-base text-[#292929] hover:text-[#ff561d] before:content-[''] before:bg-[#ff561d]/70 before:h-0.5 before:w-full before:transition-[all_0.3s_ease-in-out_0s] before:invisible before:absolute before:block before:bottom-0 before:scale-x-0 hover:before:scale-x-100 hover:before:visible">Gallery</a>
+          </li>
+          <li class="px-0 py-2 border-b lg:px-2 lg:py-0 border-white/10 lg:border-0 last:border-0">
+            <a href="students.html"
+              class="relative px-0 lg:px-1 xl:px-3 py-0 lg:py-2 flex lg:justify-center duration-[0.3s] font-normal text-lg lg:text-base text-[#292929] hover:text-[#ff561d] before:content-[''] before:bg-[#ff561d]/70 before:h-0.5 before:w-full before:transition-[all_0.3s_ease-in-out_0s] before:invisible before:absolute before:block before:bottom-0 before:scale-x-0 hover:before:scale-x-100 hover:before:visible">Students</a>
+          </li>
+          <li class="px-0 py-2 border-b lg:px-2 lg:py-0 border-white/10 lg:border-0 last:border-0">
+            <a href="contact.html"
+              class="relative px-0 lg:px-1 xl:px-3 py-0 lg:py-2 flex lg:justify-center duration-[0.3s] font-normal text-lg lg:text-base text-[#292929] hover:text-[#ff561d] before:content-[''] before:bg-[#ff561d]/70 before:h-0.5 before:w-full before:transition-[all_0.3s_ease-in-out_0s] before:invisible before:absolute before:block before:bottom-0 before:scale-x-0 hover:before:scale-x-100 hover:before:visible">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="order-2 lg:order-3">
+        <a href="#"
+          class="px-8 py-3 my-4 text-base text-[#ff561d] font-semibold border-2 border-[#ff561d] rounded-lg bg-none [transition:all_0.5s_linear] translate-y-0 hover:-translate-y-2 hover:shadow-[inset_8rem_0_0_0_#ff561d,inset_-8rem_0_0_0_#ff561d] hover:text-white">
+          Enroll your kid
+        </a>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section id="gallery" class="bg-[#fff] py-24 mt-20">
+      <div class="max-w-6xl px-3 mx-auto">
+        <div class="md:flex gap-3 mb-10">
+          <div class="md:w-2/5 pb-5 text-left">
+            <h5 class="inline-block text-[#2c2c2c] text-sm font-medium tracking-widest mb-5 uppercase">
+              Our activities
+            </h5>
+            <h3 class="text-[30px] md:text-[40px] leading-tight font-semibold text-black">
+              More than just a joyful place
+            </h3>
+          </div>
+          <div class="md:w-3/5">
+            <div class="flex flex-col gap-3">
+              <h6 class="text-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam reprehenderit provident tenetur beatae
+                minima ipsam incidunt. Dolorem, distinctio et! Ipsum laboriosam adipisci repudiandae veritatis! Corporis
+                nostrum at labore quisquam sapiente!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis adipisci et illum tempore magni aliquam
+                ab, expedita iusto aliquid
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-5 px-2">
+          <div className="w-1/3 grow basis-1/4">
+            <div class="relative my-5 overflow-hidden shadow max-w-[350px] group rounded-lg">
+              <img loading="lazy" src="assets/img/gallery-img2.avif" alt="Gallery"
+                class="w-full relative top-0 group-hover:top-[-30px] [transition:all_0.6s_cubic-bezier(0.645,0.045,0.355,1)] max-h-[500px] object-cover object-center" />
+              <div
+                class="opacity-0 group-hover:opacity-100 absolute bottom-[-50px] group-hover:bottom-0 bg-black/80 p-4 w-full [transition:all_0.3s_ease-in-out] text-white">
+                <h5 class="pb-1 text-lg font-bold">Academics</h5>
+              </div>
+            </div>
+            <div class="relative my-5 overflow-hidden shadow max-w-[350px] group rounded-lg">
+              <img loading="lazy" src="assets/img/gallery-img1.avif" alt="Gallery"
+                class="w-full relative top-0 group-hover:top-[-30px] [transition:all_0.6s_cubic-bezier(0.645,0.045,0.355,1)] max-h-[500px] object-cover object-center" />
+              <div
+                class="opacity-0 group-hover:opacity-100 absolute bottom-[-50px] group-hover:bottom-0 bg-black/80 p-4 w-full [transition:all_0.3s_ease-in-out] text-white">
+                <h5 class="pb-1 text-lg font-bold">Academics</h5>
+              </div>
+            </div>
+            <div class="relative my-5 overflow-hidden shadow max-w-[350px] group rounded-lg">
+              <img loading="lazy" src="assets/img/img-approach.jpg" alt="Gallery"
+                class="w-full relative top-0 group-hover:top-[-30px] [transition:all_0.6s_cubic-bezier(0.645,0.045,0.355,1)] max-h-[500px] object-cover object-center" />
+              <div
+                class="opacity-0 group-hover:opacity-100 absolute bottom-[-50px] group-hover:bottom-0 bg-black/80 p-4 w-full [transition:all_0.3s_ease-in-out] text-white">
+                <h5 class="pb-1 text-lg font-bold">Outdoor Play</h5>
+              </div>
+            </div>
+          </div>
+          <div className="w-1/3 grow basis-1/4">
+            <div class="relative my-5 overflow-hidden shadow max-w-[350px] group rounded-lg">
+              <img loading="lazy" src="assets/img/gallery-img5.avif" alt="Gallery"
+                class="w-full relative top-0 group-hover:top-[-30px] [transition:all_0.6s_cubic-bezier(0.645,0.045,0.355,1)] max-h-[500px] object-cover object-center" />
+              <div
+                class="opacity-0 group-hover:opacity-100 absolute bottom-[-50px] group-hover:bottom-0 bg-black/80 p-4 w-full [transition:all_0.3s_ease-in-out] text-white">
+                <h5 class="pb-1 text-lg font-bold">Outdoor Play</h5>
+              </div>
+            </div>
+            <div class="relative my-5 overflow-hidden shadow max-w-[350px] group rounded-lg">
+              <img loading="lazy" src="assets/img/gallery-img4.avif" alt="Gallery"
+                class="w-full relative top-0 group-hover:top-[-30px] [transition:all_0.6s_cubic-bezier(0.645,0.045,0.355,1)] max-h-[500px] object-cover object-center" />
+              <div
+                class="opacity-0 group-hover:opacity-100 absolute bottom-[-50px] group-hover:bottom-0 bg-black/80 p-4 w-full [transition:all_0.3s_ease-in-out] text-white">
+                <h5 class="pb-1 text-lg font-bold">Fun</h5>
+              </div>
+            </div>
+            <div class="relative my-5 overflow-hidden shadow max-w-[350px] group rounded-lg">
+              <img loading="lazy" src="assets/img/gallery-img3.avif" alt="Gallery"
+                class="w-full relative top-0 group-hover:top-[-30px] [transition:all_0.6s_cubic-bezier(0.645,0.045,0.355,1)] max-h-[500px] object-cover object-center" />
+              <div
+                class="opacity-0 group-hover:opacity-100 absolute bottom-[-50px] group-hover:bottom-0 bg-black/80 p-4 w-full [transition:all_0.3s_ease-in-out] text-white">
+                <h5 class="pb-1 text-lg font-bold">Fun</h5>
+              </div>
+            </div>
+          </div>
+          <div className="w-1/3 grow basis-1/4">
+            <div class="relative my-5 overflow-hidden shadow max-w-[350px] group rounded-lg">
+              <img loading="lazy" src="assets/img/gallery-img7.avif" alt="Gallery"
+                class="w-full relative top-0 group-hover:top-[-30px] [transition:all_0.6s_cubic-bezier(0.645,0.045,0.355,1)] max-h-[500px] object-cover object-center" />
+              <div
+                class="opacity-0 group-hover:opacity-100 absolute bottom-[-50px] group-hover:bottom-0 bg-black/80 p-4 w-full [transition:all_0.3s_ease-in-out] text-white">
+                <h5 class="pb-1 text-lg font-bold">Fun</h5>
+              </div>
+            </div>
+            <div class="relative my-5 overflow-hidden shadow max-w-[350px] group rounded-lg">
+              <img loading="lazy" src="assets/img/gallery-img8.avif" alt="Gallery"
+                class="w-full relative top-0 group-hover:top-[-30px] [transition:all_0.6s_cubic-bezier(0.645,0.045,0.355,1)] max-h-[500px] object-cover object-center" />
+              <div
+                class="opacity-0 group-hover:opacity-100 absolute bottom-[-50px] group-hover:bottom-0 bg-black/80 p-4 w-full [transition:all_0.3s_ease-in-out] text-white">
+                <h5 class="pb-1 text-lg font-bold">Fun</h5>
+              </div>
+            </div>
+            <div class="relative my-5 overflow-hidden shadow max-w-[350px] group rounded-lg">
+              <img loading="lazy" src="assets/img/gallery-img6.avif" alt="Gallery"
+                class="w-full relative top-0 group-hover:top-[-30px] [transition:all_0.6s_cubic-bezier(0.645,0.045,0.355,1)] max-h-[500px] object-cover object-center" />
+              <div
+                class="opacity-0 group-hover:opacity-100 absolute bottom-[-50px] group-hover:bottom-0 bg-black/80 p-4 w-full [transition:all_0.3s_ease-in-out] text-white">
+                <h5 class="pb-1 text-lg font-bold">Outdoor Play</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-[#2C2C2C] text-white">
+    <div class="px-3 py-5 mx-auto max-w-6xl">
+      <div class="grid grid-cols-1 gap-5 py-6">
+        <div class="max-w-[250px] block mb-4">
+          <a href="index.html" class="text-[#fff] text-xl md:text-2xl flex items-center">
+            <span class=" font-bold pe-2 me-2 uppercase">Design 
+            </span>School
+          </a>
+        </div>
+        <div class="">
+          <h4 class="pb-2 text-lg font-normal uppercase">Quick Links</h4>
+          <div class="grid grid-cols-1 gap-5 pb-8 border-b border-[#545454] md:grid-cols-4">
+            <div>
+              <ul class="text-sm">
+                <li class="pb-2.5 text-base">
+                  <a href="index.html" class="text-[#cacaca] hover:text-[#ff561d]">Home</a>
+                </li>
+                <li class="pb-2.5 text-base">
+                  <a href="about.html" class="text-[#cacaca] hover:text-[#ff561d]">About</a>
+                </li>
+                <li class="pb-2.5 text-base">
+                  <a href="gallery.html" class="text-[#cacaca] hover:text-[#ff561d]">Gallery</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="text-sm">
+                <li class="pb-2.5 text-base">
+                  <a href="index.html#ourteachers" class="text-[#cacaca] hover:text-[#ff561d]">Teachers</a>
+                </li>
+                <li class="pb-2.5 text-base">
+                  <a href="students.html" class="text-[#cacaca] hover:text-[#ff561d]">Students</a>
+                </li>
+                </li>
+                <li class="pb-2.5 text-base">
+                  <a href="contact.html" class="text-[#cacaca] hover:text-[#ff561d]">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="text-sm">
+                <li class="pb-2.5 text-base">
+                  <a href="index.html#ourgoal" class="text-[#cacaca] hover:text-[#ff561d]">Mission & Vision</a>
+                </li>
+                <li class="pb-2.5 text-base">
+                  <a href="index.html#ourcurriculum" class="text-[#cacaca] hover:text-[#ff561d]">Programs</a>
+                </li>
+                <li class="pb-2.5 text-base">
+                  <a href="index.html#whyus" class="text-[#cacaca] hover:text-[#ff561d]">Why US</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="grid grid-cols-1 md:flex items-start gap-5 pb-8 border-b border-[#545454] text-[#cacaca]">
+            <div class="w-1/4">
+              <h4 class="pb-2 text-lg text-white font-normal uppercase">
+                Contact
+              </h4>
+              <a href="tel:+91-731-1212112" class="pb-2.5 text-[#cacaca]">+91-731-1212112</a>
+              <p class="mb-0">XYZ, location, India 852001</p>
+            </div>
+            <div>
+              <h4 class="pb-2 text-lg text-white font-normal uppercase">
+                Socials
+              </h4>
+              <ul class="text-sm flex items-center gap-3">
+                <li class="pb-2.5 text-base">
+                  <a href="#"
+                    class="w-6 h-6 min-w-[24px] flex items-center justify-center rounded-full bg-white text-black hover:bg-[#ff561d] hover:text-white [transition:0.5s_ease]">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="pb-2.5 text-base">
+                  <a href="#"
+                    class="w-6 h-6 min-w-[24px] flex items-center justify-center rounded-full bg-white text-black hover:bg-[#ff561d] hover:text-white [transition:0.5s_ease]">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li class="pb-2.5 text-base">
+                  <a href="#"
+                    class="w-6 h-6 min-w-[24px] flex items-center justify-center rounded-full bg-white text-black hover:bg-[#ff561d] hover:text-white [transition:0.5s_ease]">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="pb-2.5 text-base">
+                  <a href="#"
+                    class="w-6 h-6 min-w-[24px] flex items-center justify-center rounded-full bg-white text-black hover:bg-[#ff561d] hover:text-white [transition:0.5s_ease]">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="flex items-start gap-5 pt-6 text-[#cacaca]">
+            <div class="w-full">
+              <p>Copyright © 2024 Design School | Powered by Design School</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <style>
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #fff;
+      border-radius: 10px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #ff561d;
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #b30000;
+    }
+
+    @media (max-width:1023px) {
+      .toggle-out {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        overflow-x: hidden;
+        transform: translateX(100%);
+        transition: all 0.3s linear;
+      }
+
+      .toggled {
+        display: block;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes wave {
+      0% {
+        background-position: -15vw 100%;
+      }
+
+      50% {
+        background-position: -30vw 100%;
+      }
+
+      100% {
+        background-position: -15vw 100%;
+      }
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+      }
+
+      100% {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+  <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="assets/js/slick.js"></script>
+  <script>
+    $("#nav-click").click(function () {
+      $("#nav-show").toggleClass("toggled");
+    });
+    $(".nav-links").click(function () {
+      $(".nav-dropdown").toggleClass("dropdown");
+    });
+  </script>
+</body>
+
+</html>

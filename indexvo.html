@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <title>Futuristic School</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Futuristic School" />
+  <meta property="og:title" content="Futuristic School" />
+  <meta property="og:type" content="website" />
+  <meta property="keyword" content="Futuristic School" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            neonBlue: '#00f3ff',
+            neonPink: '#ff00ff',
+            deepPurple: '#1a0b2e',
+            midnightBlue: '#11071f',
+          },
+          fontFamily: {
+            orbitron: ['Orbitron', 'sans-serif'],
+            roboto: ['Roboto', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="m-0 font-roboto text-sm lg:text-base antialiased font-normal leading-default bg-midnightBlue text-white">
+  <header class="headerfix bg-deepPurple/80 backdrop-blur-md fixed top-0 w-full z-50 shadow-lg shadow-neonBlue/20">
+    <div class="flex items-center justify-between h-20 gap-2 md:gap-3 py-3 px-3 md:px-6">
+      <div class="lg:order-1 max-w-[130px] md:max-w-[250px] block">
+        <a href="index.html" class="text-neonBlue text-xl md:text-2xl flex items-center font-orbitron">
+          <span class="font-bold text-neonPink pe-2 me-2 uppercase">Future</span>School
+        </a>
+      </div>
+      <nav id="navbar" class="order-3 lg:order-2 flex items-center">
+        <div id="nav-click" class="z-50 block cursor-pointer lg:hidden">
+          <i class="fa-solid fa-bars text-neonBlue text-2xl"></i>
+        </div>
+        <ul id="nav-show"
+          class="px-4 lg:px-0 hidden lg:flex lg:items-center bg-deepPurple lg:bg-transparent absolute lg:relative right-0 top-0 w-[300px] lg:w-auto h-screen lg:h-auto shadow-[1px_0_6px_rgba(0,0,0,.2)] lg:shadow-none toggle-out">
+          <li class="px-0 py-2 border-b lg:px-2 lg:py-0 border-white/10 lg:border-0 last:border-0">
+            <a href="index.html"
+              class="relative px-0 lg:px-1 xl:px-3 py-0 lg:py-2 flex lg:justify-center duration-[0.3s] font-normal text-lg lg:text-base text-white hover:text-neonBlue before:content-[''] before:bg-neonBlue before:h-0.5 before:w-full before:transition-[all_0.3s_ease-in-out_0s] before:invisible before:absolute before:block before:bottom-0 before:scale-x-0 hover:before:scale-x-100 hover:before:visible">Home</a>
+          </li>
+          <li class="group px-0 py-2 border-b lg:px-2 lg:py-0 border-white/10 lg:border-0 last:border-0 nav-links">
+            <a href="about.html"
+              class="relative px-0 lg:px-1 xl:px-3 py-0 lg:py-2 flex lg:justify-center duration-[0.3s] font-normal text-lg lg:text-base text-white hover:text-neonBlue before:content-[''] before:bg-neonBlue before:h-0.5 before:w-full before:transition-[all_0.3s_ease-in-out_0s] before:invisible before:absolute before:block before:bottom-0 before:scale-x-0 hover:before:scale-x-100 hover:before:visible">About
+            </a>
+          </li>
+          <li class="px-0 py-2 border-b lg:px-2 lg:py-0 border-white/10 lg:border-0 last:border-0">
+            <a href="gallery.html"
+              class="relative px-0 lg:px-1 xl:px-3 py-0 lg:py-2 flex lg:justify-center duration-[0.3s] font-normal text-lg lg:text-base text-white hover:text-neonBlue before:content-[''] before:bg-neonBlue before:h-0.5 before:w-full before:transition-[all_0.3s_ease-in-out_0s] before:invisible before:absolute before:block before:bottom-0 before:scale-x-0 hover:before:scale-x-100 hover:before:visible">Gallery</a>
+          </li>
+          <li class="px-0 py-2 border-b lg:px-2 lg:py-0 border-white/10 lg:border-0 last:border-0">
+            <a href="students.html"
+              class="relative px-0 lg:px-1 xl:px-3 py-0 lg:py-2 flex lg:justify-center duration-[0.3s] font-normal text-lg lg:text-base text-white hover:text-neonBlue before:content-[''] before:bg-neonBlue before:h-0.5 before:w-full before:transition-[all_0.3s_ease-in-out_0s] before:invisible before:absolute before:block before:bottom-0 before:scale-x-0 hover:before:scale-x-100 hover:before:visible">Students</a>
+          </li>
+          <li class="px-0 py-2 border-b lg:px-2 lg:py-0 border-white/10 lg:border-0 last:border-0">
+            <a href="#"
+              class="relative px-0 lg:px-1 xl:px-3 py-0 lg:py-2 flex lg:justify-center duration-[0.3s] font-normal text-lg lg:text-base text-white hover:text-neonBlue before:content-[''] before:bg-neonBlue before:h-0.5 before:w-full before:transition-[all_0.3s_ease-in-out_0s] before:invisible before:absolute before:block before:bottom-0 before:scale-x-0 hover:before:scale-x-100 hover:before:visible">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="order-2 lg:order-3">
+        <a href="#"
+          class="px-8 py-3 my-4 text-base text-neonPink font-semibold border-2 border-neonPink rounded-lg bg-none [transition:all_0.5s_linear] translate-y-0 hover:-translate-y-2 hover:shadow-[inset_8rem_0_0_0_#ff00ff,inset_-8rem_0_0_0_#ff00ff] hover:text-white">
+          Enroll Now
+        </a>
+      </div>
+    </div>
+  </header>
+  <section id="banner"
+    class="relative bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center bg-fixed bg-no-repeat w-full min-h-[80vh] before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-r before:from-deepPurple/80 before:to-midnightBlue/80 mt-20 py-24">
+    <div class="relative md:flex items-center justify-center w-full max-w-6xl mx-auto z-9">
+      <div class="md:w-1/2 flex items-center justify-center text-white h-full px-2 md:px-8">
+        <div class="py-2.5">
+          <p class="text-lg text-neonBlue font-orbitron">
+            Explore. Innovate. Excel.
+          </p>
+          <h3 class="py-3 text-[32px] md:text-[56px] lg:text-6xl leading-normal lg:leading-snug font-bold font-orbitron">
+            Shaping the Future of
+            <span class="text-neonPink">Education</span>
+          </h3>
+          <div class="flex md:block lg:flex items-center gap-3">
+            <a href="#"
+              class="px-8 py-3 my-4 text-base text-neonBlue font-semibold border-2 border-neonBlue rounded-lg bg-none [transition:all_0.5s_linear] translate-y-0 hover:-translate-y-2 hover:shadow-[inset_8rem_0_0_0_#00f3ff,inset_-8rem_0_0_0_#00f3ff] hover:text-deepPurple">
+              Discover More
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <div class="flex flex-wrap items-center justify-center md:justify-end py-2.5">
+          <div class="max-w-[50%]">
+            <div class="h-[480px] lg:w-[400px] mr-5">
+              <img src="https://images.unsplash.com/photo-1485546246426-74dc88dec4d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Future Learning"
+                class="h-full w-full rounded-2xl duration-[0.5s] object-cover shadow-lg shadow-neonBlue/20" />
+            </div>
+          </div>
+          <div class="max-w-[50%] pt-10">
+            <div class="h-[350px] lg:w-[300px]">
+              <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Virtual Reality Learning"
+                class="h-full w-full rounded-2xl duration-[0.5s] shadow-lg shadow-neonPink/20" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main id="main">
+    <section id="aboutus" class="py-24 bg-deepPurple">
+      <div class="max-w-6xl px-3 mx-auto">
+        <div class="md:flex gap-3 mb-10">
+          <div class="md:w-2/5 pb-5 text-left">
+            <h5 class="inline-block text-neonBlue text-sm font-medium tracking-widest mb-5 uppercase font-orbitron">
+              About us
+            </h5>
+            <h3 class="text-[30px] md:text-[40px] leading-tight font-semibold text-white font-orbitron">
+              Pioneering Tomorrow's Education
+            </h3>
+          </div>
+          <div class="md:w-3/5">
+            <div class="flex flex-col gap-3">
+              <h6 class="text-lg text-gray-300">
+                At Future School, we blend cutting-edge technology with innovative teaching methods to prepare students for the challenges of tomorrow. Our curriculum is designed to foster creativity, critical thinking, and adaptability in a rapidly evolving world.
+              </h6>
+              <h6 class="text-lg text-gray-300">
+                We believe in nurturing not just academic excellence, but also emotional intelligence and digital literacy. Our state-of-the-art facilities and expert faculty create an immersive learning environment that inspires students to push boundaries and reach for the stars.
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 grid-flow-row-dense items-center gap-6">
+          <div
+            class="p-8 border border-neonBlue/30 bg-deepPurple hover:bg-midnightBlue h-40 rounded-2xl hover:shadow-md hover:shadow-neonBlue/20 transition duration-300">
+            <i class="fa-solid text-3xl text-neonBlue fa-microchip"></i>
+            <h5
+              class="text-xl pt-3 font-semibold text-white group-hover:opacity-0 group-hover:translate-y-[-80px] transition-all duration-[0.5s] ease">
+              Innovative
+            </h5>
+          </div>
+          <div
+            class="p-8 border border-neonPink/30 bg-deepPurple hover:bg-midnightBlue h-40 rounded-2xl hover:shadow-md hover:shadow-neonPink/20 transition duration-300">
+            <i class="fa-solid text-3xl text-neonPink fa-brain"></i>
+            <h5
+              class="text-xl pt-3 font-semibold text-white group-hover:opacity-0 group-hover:translate-y-[-80px] transition-all duration-[0.5s] ease">
+              Intelligent
+            </h5>
+          </div>
+          <div
+            class="p-8 border border-neonBlue/30 bg-deepPurple hover:bg-midnightBlue h-40 rounded-2xl hover:shadow-md hover:shadow-neonBlue/20 transition duration-300">
+            <i class="fa-solid text-3xl text-neonBlue fa-globe"></i>
+            <h5
+              class="text-xl pt-3 font-semibold text-white group-hover:opacity-0 group-hover:translate-y-[-80px] transition-all duration-[0.5s] ease">
+              Global
+            </h5>
+          </div>
+          <div
+            class="p-8 border border-neonPink/30 bg-deepPurple hover:bg-midnightBlue h-40 rounded-2xl hover:shadow-md hover:shadow-neonPink/20 transition duration-300">
+            <i class="fa-solid text-3xl text-neonPink fa-rocket"></i>
+            <h5
+              class="text-xl pt-3 font-semibold text-white group-hover:opacity-0 group-hover:translate-y-[-80px] transition-all duration-[0.5s] ease">
+              Ambitious
+            </h5>
+          </div>
+          <div
+            class="p-8 border border-neonBlue/30 bg-deepPurple hover:bg-midnightBlue h-40 rounded-2xl hover:shadow-md hover:shadow-neonBlue/20 transition duration-300">
+            <i class="fa-solid text-3xl text-neonBlue fa-lightbulb"></i>
+            <h5
+              class="text-xl pt-3 font-semibold text-white group-hover:opacity-0 group-hover:translate-y-[-80px] transition-all duration-[0.5s] ease">
+              Creative
+            </h5>
+          </div>
+          <div
+            class="p-8 border border-neonPink/30 bg-deepPurple hover:bg-midnightBlue h-40 rounded-2xl hover:shadow-md hover:shadow-neonPink/20 transition duration-300">
+            <i class="fa-solid text-3xl text-neonPink fa-users"></i>
+            <h5
+              class="text-xl pt-3 font-semibold text-white group-hover:opacity-0 group-hover:translate-y-[-80px] transition-all duration-[0.5s] ease">
+              Collaborative
+            </h5>
+          </div>
+          <div class="group bg-deepPurple h-40 col-span-2 rounded-2xl hover:bg-midnightBlue transition duration-300">
+            <div
+              class="bg-gradient-to-r from-neonBlue to-neonPink h-full rounded-2xl p-8 flex items-center justify-center flex-col text-center text-white font-medium">
+              <h5
+                class="text-2xl group-hover:opacity-0 group-hover:translate-y-[-80px] transition-all duration-[0.5s] ease">
+                Empowering students to shape the future
+              </h5>
+              <div class="absolute opacity-0 group-hover:opacity-100 transition-all duration-[0.5s] ease">
+                <a href="#"
+                  class="px-8 py-3 my-4 text-base text-white font-semibold border-2 border-white rounded-lg bg-none [transition:all_0.5s_linear] translate-y-0 hover:-translate-y-2 hover:shadow-[inset_8rem_0_0_0_#ffffff,inset_-8rem_0_0_0_#ffffff] hover:text-deepPurple">
+                  Join Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="ourglance" class="relative pt-20 pb-14 mt-14 border-y-2 border-neonBlue/40 bg-midnightBlue bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')] bg-center bg-fixed bg-no-repeat bg-cover text-white before:content-[''] before:bg-deepPurple/60 before:h-full before:w-full before:transition-[all_0.3s_ease-in-out_0s] before:inset-0 before:absolute">
+      <div class="px-3 mx-auto max-w-7xl relative">
+        <div class="grid grid-cols-4">
+          <div class="text-center group">
+            <h3 class="pb-3 text-4xl font-medium hover:font-bold [transition:all_0.5s_ease] group-hover:text-neonBlue group-hover:scale-110">5000+
+            </h3>
+            <p class="[transition:all_0.5s_ease] uppercase group-hover:font-semibold">Students Graduated</p>
+          </div>
+          <div class="text-center group">
+            <h3 class="pb-3 text-4xl font-medium hover:font-bold [transition:all_0.5s_ease] group-hover:text-neonPink group-hover:scale-110">3k+
+            </h3>
+            <p class="[transition:all_0.5s_ease] uppercase group-hover:font-semibold">Current Enrollments</p>
+          </div>
+          <div class="text-center group">
+            <h3 class="pb-3 text-4xl font-medium hover:font-bold [transition:all_0.5s_ease] group-hover:text-neonBlue group-hover:scale-110">50+
+            </h3>
+            <p class="[transition:all_0.5s_ease] uppercase group-hover:font-semibold">Cutting-edge Programs</p>
+          </div>
+          <div class="text-center group">
+            <h3 class="pb-3 text-4xl font-medium hover:font-bold [transition:all_0.5s_ease] group-hover:text-neonPink group-hover:scale-110">100%
+            </h3>
+            <p class="[transition:all_0.5s_ease] uppercase group-hover:font-semibold">Tech-Integrated Learning</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="ourcurriculum" class="bg-deepPurple py-24">
+      <div class="max-w-6xl px-3 mx-auto">
+        <div class="md:flex gap-3 mb-10 item-center">
+          <div class="md:w-2/5 pb-5 text-left">
+            <h5 class="inline-block text-neonBlue text-sm font-medium tracking-widest mb-5 uppercase font-orbitron">
+              Overview
+            </h5>
+            <h3 class="text-[30px] md:text-[40px] leading-tight font-semibold text-white font-orbitron">
+              Future-Ready Curriculum
+            </h3>
+          </div>
+          <div class="md:w-3/5">
+            <h6 class="text-lg text-gray-300">
+              Our curriculum is designed to prepare students for the challenges and opportunities of the future. We blend traditional subjects with cutting-edge fields, ensuring our students are equipped with the knowledge and skills needed to thrive in a rapidly evolving world.
+            </h6>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 items-center flex-wrap gap-8">
+          <div class="flex flex-col bg-midnightBlue shadow-xl [transition:all_0.5s_ease] hover:bg-deepPurple hover:scale-[1.04] min-h-48 rounded-2xl border border-neonBlue/30 hover:border-neonBlue">
+            <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="AI and Machine Learning"
+              class="object-center object-cover h-[340px] rounded-xl" />
+            <div class="p-4">
+              <div class="text-2xl font-semibold pb-3 text-neonBlue">AI and Machine Learning</div>
+              <p class="text-base font-normal text-gray-300">Exploring the frontiers of artificial intelligence and its applications in solving real-world problems.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col bg-midnightBlue shadow-xl [transition:all_0.5s_ease] hover:bg-deepPurple hover:scale-[1.04] min-h-48 rounded-2xl border border-neonPink/30 hover:border-neonPink">
+            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Quantum Computing"
+              class="object-center object-cover h-[340px] rounded-xl" />
+            <div class="p-4">
+              <div class="text-2xl font-semibold pb-3 text-neonPink">Quantum Computing</div>
+              <p class="text-base font-normal text-gray-300">Delving into the principles of quantum mechanics and their application in next-generation computing.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col bg-midnightBlue shadow-xl [transition:all_0.5s_ease] hover:bg-deepPurple hover:scale-[1.04] min-h-48 rounded-2xl border border-neonBlue/30 hover:border-neonBlue">
+            <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Bioengineering"
+              class="object-center object-cover h-[340px] rounded-xl" />
+            <div class="p-4">
+              <div class="text-2xl font-semibold pb-3 text-neonBlue">Bioengineering</div>
+              <p class="text-base font-normal text-gray-300">Combining biology and engineering to solve health and environmental challenges.</p>
+            </div>
+          </div>
+          <div class="flex flex-col bg-midnightBlue shadow-xl [transition:all_0.5s_ease] hover:bg-deepPurple hover:scale-[1.04] min-h-48 rounded-2xl border border-neonPink/30 hover:border-neonPink">
+            <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Space Technology"
+              class="object-center object-cover h-[340px] rounded-xl" />
+            <div class="p-4">
+              <div class="text-2xl font-semibold pb-3 text-neonPink">Space Technology</div>
+              <p class="text-base font-normal text-gray-300">Exploring the latest advancements in space exploration and satellite technology.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col bg-midnightBlue shadow-xl [transition:all_0.5s_ease] hover:bg-deepPurple hover:scale-[1.04] min-h-48 rounded-2xl border border-neonBlue/30 hover:border-neonBlue">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Cybersecurity"
+              class="object-center object-cover h-[340px] rounded-xl" />
+            <div class="p-4">
+              <div class="text-2xl font-semibold pb-3 text-neonBlue">Cybersecurity</div>
+              <p class="text-base font-normal text-gray-300">Developing skills to protect digital systems and networks in an increasingly connected world.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col bg-midnightBlue shadow-xl [transition:all_0.5s_ease] hover:bg-deepPurple hover:scale-[1.04] min-h-48 rounded-2xl border border-neonPink/30 hover:border-neonPink">
+            <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Renewable Energy"
+              class="object-center object-cover h-[340px] rounded-xl" />
+            <div class="p-4">
+              <div class="text-2xl font-semibold pb-3 text-neonPink">Renewable Energy</div>
+              <p class="text-base font-normal text-gray-300">Innovating sustainable energy solutions for a greener future.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="ourteachers" class="bg-midnightBlue py-24">
+      <div class="max-w-6xl px-3 mx-auto">
+        <div class="md:flex items-center gap-3 mb-10">
+          <div class="md:w-2/4 pb-5 pr-4 text-left">
+            <h5 class="inline-block text-neonBlue text-sm font-medium tracking-widest mb-5 uppercase font-orbitron">
+              Meet our innovators
+            </h5>
+            <h3 class="text-[30px] md:text-[40px] leading-tight font-semibold text-white font-orbitron mb-8">
+              Visionaries shaping the future of education
+            </h3>
+            <h6 class="text-lg text-gray-300">
+              Our faculty comprises world-class experts, innovators, and thought leaders dedicated to pushing the boundaries of education and preparing students for the challenges of tomorrow.
+            </h6>
+          </div>
+          <div class="md:w-2/4">
+            <div class="flex justify-center">
+              <div class="text-left text-white mr-10">
+                <h3 class="pb-3 text-3xl md:text-6xl font-bold text-neonBlue">100+</h3>
+                <p class="text-lg">Cutting-edge courses</p>
+              </div>
+              <div class="border-neonPink border-r"></div>
+              <div class="text-left text-white ml-10">
+                <h3 class="pb-3 text-3xl md:text-6xl font-bold text-neonPink">50</h3>
+                <p class="text-lg">Expert Innovators</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:flex items-center gap-6">
+          <div class="md:w-1/3 pb-2.5">
+            <div class="flex flex-col gap-5 bg-deepPurple rounded-xl shadow-lg pb-4 [transition:all_0.5s_ease] hover:bg-midnightBlue border border-neonBlue/30 hover:border-neonBlue hover:scale-[1.04] hover:shadow-xl">
+              <div class="w-auto h-[340px]">
+                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Dr. Elara Quantum"
+                  class="rounded-t-2xl w-full h-full object-cover" />
+              </div>
+              <div class="px-5 py-4">
+                <h6 class="text-[24px] md:text-[26px] font-semibold pb-3 text-neonBlue">Dr. Elara Quantum</h6>
+                <p class="text-base leading-[1.4em] text-gray-300">
+                  Quantum Computing Specialist
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/3 pb-2.5">
+            <div class="flex flex-col gap-5 bg-deepPurple rounded-xl shadow-lg pb-4 [transition:all_0.5s_ease] hover:bg-midnightBlue border border-neonPink/30 hover:border-neonPink hover:scale-[1.04] hover:shadow-xl">
+              <div class="w-auto h-[340px]">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Prof. Zephyr AI"
+                  class="rounded-t-2xl w-full h-full object-cover" />
+              </div>
+              <div class="px-5 py-4">
+                <h6 class="text-[24px] md:text-[26px] font-semibold pb-3 text-neonPink">Prof. Zephyr AI</h6>
+                <p class="text-base leading-[1.4em] text-gray-300">
+                  Artificial Intelligence Researcher
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/3 pb-2.5">
+            <div class="flex flex-col gap-5 bg-deepPurple rounded-xl shadow-lg pb-4 [transition:all_0.5s_ease] hover:bg-midnightBlue border border-neonBlue/30 hover:border-neonBlue hover:scale-[1.04] hover:shadow-xl">
+              <div class="w-auto h-[340px]">
+                <img src="https://images.unsplash.com/photo-1573497019418-b400bb3ab074?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Dr. Nova Stellar"
+                  class="rounded-t-2xl w-full h-full object-cover" />
+              </div>
+              <div class="px-5 py-4">
+                <h6 class="text-[24px] md:text-[26px] font-semibold pb-3 text-neonBlue">Dr. Nova Stellar</h6>
+                <p class="text-base leading-[1.4em] text-gray-300">
+                  Astrophysics and Space Technology Expert
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="whyus" class="bg-deepPurple py-24">
+      <div class="max-w-6xl px-3 mx-auto">
+        <div class="flex flex-wrap mb-10 text-white item-center">
+          <div class="w-full pb-5 mb-7">
+            <h5 class="inline-block mb-5 text-sm font-medium tracking-widest uppercase text-neonBlue font-orbitron">
+              Why choose us
+            </h5>
+            <h3 class="text-[30px] md:text-[40px] leading-tight font-semibold font-orbitron">The ultimate futuristic learning experience</h3>
+          </div>
+          <div class=" pb-5 text-left">
+            <h6 class="pr-6 text-lg text-gray-300">
+              At Future School, we're not just preparing students for the future - we're helping them shape it. Our cutting-edge curriculum, state-of-the-art facilities, and world-class faculty create an unparalleled learning environment that nurtures innovation, creativity, and critical thinking.
+            </h6>
+          </div>
+          <div class="md:w-full">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-deepPurple">
+              <h6
+                class="pr-6 text-base text-center font-semibold bg-neonBlue rounded-lg border border-neonBlue p-4 w-full [transition:all_0.5s_linear] hover:shadow-[inset_14rem_0_0_0_#ff00ff,inset_-14rem_0_0_0_#ff00ff] hover:text-white">
+                Immersive Virtual Reality Labs
+              </h6>
+              <h6
+                class="pr-6 text-base text-center font-semibold bg-neonPink rounded-lg border border-neonPink p-4 w-full [transition:all_0.5s_linear] hover:shadow-[inset_14rem_0_0_0_#00f3ff,inset_-14rem_0_0_0_#00f3ff] hover:text-deepPurple">
+                AI-Powered Personalized Learning
+              </h6>
+              <h6
+                class="pr-6 text-base text-center font-semibold bg-neonBlue rounded-lg border border-neonBlue p-4 w-full [transition:all_0.5s_linear] hover:shadow-[inset_14rem_0_0_0_#ff00ff,inset_-14rem_0_0_0_#ff00ff] hover:text-white">
+                Global Collaboration Networks
+              </h6>
+            </div>
+          </div>
+          <div class="w-full pt-5 mt-5">
+            <div class="min-h-[240px] rounded-3xl overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2560&q=80" alt="Futuristic Learning Environment" class="rounded-3xl w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="parentsview" class="bg-midnightBlue py-24">
+      <div class="max-w-6xl px-3 mx-auto">
+        <div class="flex flex-wrap mb-10 text-white items-center justify-between">
+          <div class="w-full">
+            <h5 class="inline-block mb-5 text-sm font-medium tracking-widest uppercase text-neonBlue font-orbitron">
+              Testimonials
+            </h5>
+          </div>
+          <div class="md:w-2/4 pb-5 text-left">
+            <h3 class="text-[32px] md:text-[40px] leading-tight font-semibold font-orbitron">
+              What parents and students say
+            </h3>
+          </div>
+        </div>
+        <div class="bg-deepPurple rounded-2xl">
+          <div class="fade">
+            <div class="bg-gradient-to-r from-neonBlue to-neonPink rounded-2xl pl-12 py-12">
+              <div class="md:flex items-center">
+                <div class="md:w-1/2">
+                  <div class="text-white rounded-2xl animate-[1.25s_fadeInUp]">
+                    <h6 class="text-[24px] md:text-[26px] font-semibold mb-4 font-orbitron">Aria Novak</h6>
+                    <p class="text-base">
+                      "Future School has completely transformed my daughter's approach to learning. The immersive VR labs and AI-powered personalized curriculum have ignited her passion for science and technology. It's incredible to see her so excited about quantum computing at such a young age!"
+                    </p>
+
+                    <a class="flex items-center justify-start gap-2.5 pt-4 hover:underline [transition:all_0.5s_ease]">
+                      Read Full Story
+                      <div class="flex items-center justify-center -rotate-45 rounded-full h-9 w-9">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path
+                            d="M9.12499 0.700427L15.725 7.30043C15.825 7.40043 15.896 7.50876 15.938 7.62543C15.98 7.74209 16.0007 7.86709 16 8.00043C16 8.13376 15.979 8.25876 15.937 8.37543C15.895 8.49209 15.8243 8.60043 15.725 8.70043L9.12498 15.3004C8.94165 15.4838 8.71232 15.5794 8.43698 15.5874C8.16165 15.5954 7.92432 15.4998 7.72499 15.3004C7.52499 15.1171 7.42065 14.8878 7.41198 14.6124C7.40332 14.3371 7.49932 14.0998 7.69998 13.9004L12.6 9.00043L1.42498 9.00043C1.14165 9.00043 0.903986 8.90443 0.711985 8.71243C0.519985 8.52043 0.424318 8.28309 0.424985 8.00043C0.424985 7.71709 0.520652 7.47943 0.711985 7.28743C0.903319 7.09543 1.14098 6.99976 1.42498 7.00043L12.6 7.00043L7.69999 2.10043C7.51665 1.91709 7.42065 1.68376 7.41199 1.40043C7.40332 1.11709 7.49932 0.883761 7.69999 0.700427C7.88332 0.500427 8.11665 0.400426 8.39999 0.400426C8.68332 0.400426 8.92499 0.500428 9.12499 0.700427Z"
+                            fill="white"></path>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="md:w-1/2">
+                  <div class="overflow-hidden">
+                    <div class="h-[440px] md:w-[400px] ">
+                      <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Aria Novak"
+                        class="rounded-3xl w-full h-full object-cover object-center" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gradient-to-r from-neonPink to-neonBlue rounded-2xl pl-12 py-12">
+              <div class="md:flex items-center">
+                <div class="md:w-1/2">
+                  <div class="text-white rounded-2xl animate-[1.25s_fadeInUp]">
+                    <h6 class="text-[24px] md:text-[26px] font-semibold mb-4 font-orbitron">Zain Chen</h6>
+                    <p class="text-base">
+                      "As a student at Future School, I feel like I'm living in the future. The global collaboration networks have allowed me to work on projects with peers from around the world, and the cutting-edge curriculum has given me skills that are already in high demand in the tech industry."
+                    </p>
+
+                    <a class="flex items-center justify-start gap-2.5 pt-4 hover:underline [transition:all_0.5s_ease]">
+                      Read Full Story
+                      <div class="flex items-center justify-center -rotate-45 rounded-full h-9 w-9">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path
+                            d="M9.12499 0.700427L15.725 7.30043C15.825 7.40043 15.896 7.50876 15.938 7.62543C15.98 7.74209 16.0007 7.86709 16 8.00043C16 8.13376 15.979 8.25876 15.937 8.37543C15.895 8.49209 15.8243 8.60043 15.725 8.70043L9.12498 15.3004C8.94165 15.4838 8.71232 15.5794 8.43698 15.5874C8.16165 15.5954 7.92432 15.4998 7.72499 15.3004C7.52499 15.1171 7.42065 14.8878 7.41198 14.6124C7.40332 14.3371 7.49932 14.0998 7.69998 13.9004L12.6 9.00043L1.42498 9.00043C1.14165 9.00043 0.903986 8.90443 0.711985 8.71243C0.519985 8.52043 0.424318 8.28309 0.424985 8.00043C0.424985 7.71709 0.520652 7.47943 0.711985 7.28743C0.903319 7.09543 1.14098 6.99976 1.42498 7.00043L12.6 7.00043L7.69999 2.10043C7.51665 1.91709 7.42065 1.68376 7.41199 1.40043C7.40332 1.11709 7.49932 0.883761 7.69999 0.700427C7.88332 0.500427 8.11665 0.400426 8.39999 0.400426C8.68332 0.400426 8.92499 0.500428 9.12499 0.700427Z"
+                            fill="white"></path>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="md:w-1/2">
+                  <div class="overflow-hidden">
+                    <div class="h-[440px] md:w-[400px] ">
+                      <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Zain Chen"
+                        class="rounded-3xl w-full h-full object-cover object-center" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="ourgoal" class="bg-[linear-gradient(0deg,#1a0b2e,#11071f)] py-24 bg-fixed">
+      <div class="max-w-6xl px-3 mx-auto">
+        <div class="md:flex flex-wrap mb-10 text-white item-center">
+          <div class="w-full">
+            <h5 class="inline-block mb-5 text-sm font-medium tracking-widest uppercase text-neonBlue font-orbitron">
+              OUR MISSION
+            </h5>
+          </div>
+          <div class="md:w-2/4 pb-5 text-left">
+            <h3 class="text-[30px] md:text-[40px] leading-tight font-semibold font-orbitron">
+              Shaping the future
+              <span class="block mt-3">of education</span>
+            </h3>
+          </div>
+          <div class="md:w-2/4">
+            <h6 class="md:pl-6 text-lg text-gray-300">
+              At Future School, we're committed to revolutionizing education by seamlessly blending cutting-edge technology with innovative teaching methods. Our goal is to empower students with the skills, knowledge, and mindset needed to thrive in an ever-evolving world.
+            </h6>
+          </div>
+        </div>
+        <div class="md:flex items-center gap-6">
+          <div class="md:w-1/2">
+            <div class="bg-deepPurple text-white rounded-2xl mb-3">
+              <div class="h-[300px]">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="vision" class="rounded-t-2xl w-full h-full object-cover" />
+              </div>
+              <div class="p-9">
+                <h6 class="text-[24px] md:text-[26px] leading-tight font-semibold mb-4 text-neonBlue font-orbitron">Vision</h6>
+                <p class="text-lg text-gray-300">
+                  To create a global network of innovative learning hubs that prepare students to be leaders, innovators, and problem-solvers in a rapidly changing world. We envision a future where education transcends traditional boundaries, embracing technology and creativity to unlock every student's potential.
+                </p>
+                <div class="flex flex-col md:flex-row items-start md:items-center md:justify-between gap-3 mt-10">
+                  <a href="#"
+                    class="px-8 py-3 my-4 text-base text-neonBlue font-semibold border-2 border-neonBlue rounded-lg bg-none [transition:all_0.5s_linear] translate-y-0 hover:-translate-y-2 hover:shadow-[inset_8rem_0_0_0_#00f3ff,inset_-8rem_0_0_0_#00f3ff] hover:text-deepPurple">
+                    Learn More
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <div class="bg-deepPurple text-white rounded-2xl mb-3">
+              <div class="h-[300px]">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="mission" class="rounded-t-2xl w-full h-full object-cover" />
+              </div>
+              <div class="p-9">
+                <h6 class="text-[24px] md:text-[26px] leading-tight font-semibold mb-4 text-neonPink font-orbitron">
+                  Mission
+                </h6>
+                <p class="text-lg text-gray-300">
+                  Our mission is to provide a dynamic, technology-enhanced learning environment that fosters creativity, critical thinking, and global awareness. We are committed to nurturing well-rounded individuals who are not only academically excellent but also emotionally intelligent and socially responsible.
+                </p>
+                <div class="flex flex-col md:flex-row items-start md:items-center md:justify-between gap-3 mt-10">
+                  <a href="#"
+                    class="px-8 py-3 my-4 text-base text-neonPink font-semibold border-2 border-neonPink rounded-lg bg-none [transition:all_0.5s_linear] translate-y-0 hover:-translate-y-2 hover:shadow-[inset_8rem_0_0_0_#ff00ff,inset_-8rem_0_0_0_#ff00ff] hover:text-white">
+                    Discover More
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contactus" class="bg-deepPurple py-24">
+      <div class="max-w-6xl px-3 mx-auto">
+        <div
+          class="bg-gradient-to-r from-neonBlue to-neonPink rounded-3xl bg-fixed bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')] bg-bottom bg-contain bg-no-repeat bg-[length:150vw_auto] px-4 md:px-14 lg:px-16 py-20">
+          <div class="flex flex-wrap items-center justify-center md:justify-between text-white gap-4">
+            <div class="md:w-2/5 pb-5 text-left">
+              <h3 class="text-[24px] md:text-[26px] md:text-[46px] leading-tight font-semibold font-orbitron">
+                Connect with
+                <span class="block">the future</span>
+              </h3>
+              <p class="py-4 text-lg mb-4">
+                Ready to embark on a journey of innovation and discovery? Get in touch with us today.
+              </p>
+              <a href="#"
+                class="inline-block px-8 py-3 text-base text-white font-semibold border-2 border-white rounded-lg bg-none [transition:all_0.5s_linear] translate-y-0 hover:-translate-y-2 hover:shadow-[inset_8rem_0_0_0_#fff,inset_-8rem_0_0_0_#fff] hover:text-deepPurple">
+                Schedule a Tour
+              </a>
+            </div>
+            <div class="md:w-2/5 flex-1">
+              <div
+                class="h-full py-6 px-3 md:px-5 text-base text-left rounded-xl shadow-xl border-white/40 bg-deepPurple/80 backdrop-blur-md md:py-8">
+                <form class="mx-auto">
+                  <div class="flex item-center">
+                    <div class="w-1/2 px-2 mb-5 md:px-3">
+                      <label for="name" class="px-1 text-sm font-medium leading-6 md:leading-8 md:text-base">
+                        Your name
+                      </label>
+                      <input type="text" name="name"
+                        class="w-full px-3 py-3 text-base text-white rounded-lg outline-none border-white/40 bg-midnightBlue/50 focus:border-neonBlue autofill:!bg-midnightBlue/50"
+                        placeholder="Enter name" autocomplete="name" required />
+                    </div>
+                    <div class="w-1/2 px-2 mb-5 md:px-3">
+                      <label for="mail" class="px-1 text-sm font-medium leading-6 md:leading-8 md:text-base">
+                        Your email
+                      </label>
+                      <input type="email" name="mail"
+                        class="w-full px-3 py-3 text-base text-white rounded-lg outline-none border-white/40 bg-midnightBlue/50 focus:border-neonBlue"
+                        placeholder="you@example.com" autocomplete="email" />
+                    </div>
+                  </div>
+                  <div class="flex item-center">
+                    <div class="w-1/2 px-2 mb-5 md:px-3">
+                      <label for="phone" class="px-1 text-sm font-medium leading-6 md:leading-8 md:text-base">
+                        Your Phone
+                      </label>
+                      <input type="tel" name="phone"
+                        class="w-full px-3 py-3 text-base text-white rounded-lg outline-none border-white/40 bg-midnightBlue/50 focus:border-neonBlue autofill:!bg-midnightBlue/50"
+                        placeholder="Enter phone" autocomplete="tel" required />
+                    </div>
+                    <div class="w-1/2 px-2 mb-5 md:px-3">
+                      <label for="city" class="px-1 text-sm font-medium leading-6 md:leading-8 md:text-base">
+                        Your city
+                      </label>
+                      <input type="text" name="city"
+                        class="w-full px-3 py-3 text-base text-white rounded-lg outline-none border-white/40 bg-midnightBlue/50 focus:border-neonBlue"
+                        placeholder="Enter city" autocomplete="address-level2" />
+                    </div>
+                  </div>
+                  <div class="w-full px-3 mb-5">
+                    <label for="current-school" class="px-1 text-sm font-medium leading-6 md:leading-8 md:text-base">
+                      Current School
+                    </label>
+                    <input type="text" name="current-school"
+                      class="w-full px-3 py-3 text-base text-white rounded-lg outline-none border-white/40 bg-midnightBlue/50 focus:border-neonBlue"
+                      placeholder="Enter Current School" />
+                  </div>
+                  <div class="w-full px-3 mb-5">
+                    <label for="grade" class="px-1 text-sm font-medium leading-6 md:leading-8 md:text-base">
+                      Select Grade
+                    </label>
+                    <select id="grade" name="grade"
+                      class="w-full px-3 py-3 text-base text-white rounded-lg outline-none border-white/40 bg-midnightBlue/50 focus:border-neonBlue"
+                      required>
+                      <option value="" selected="selected">Select Grade</option>
+                      <option value="PRE">Pre-Kindergarten</option>
+                      <option value="KG">Kindergarten</option>
+                      <option value="G1">Grade 1</option>
+                      <option value="G2">Grade 2</option>
+                      <option value="G3">Grade 3</option>
+                      <option value="G4">Grade 4</option>
+                      <option value="G5">Grade 5</option>
+                      <option value="G6">Grade 6</option>
+                      <option value="G7">Grade 7</option>
+                      <option value="G8">Grade 8</option>
+                      <option value="G9">Grade 9</option>
+                      <option value="G10">Grade 10</option>
+                      <option value="G11">Grade 11</option>
+                      <option value="G12">Grade 12</option>
+                    </select>
+                  </div>
+                  <div class="flex item-center justify-end px-3">
+                    <button type="submit"
+                      class="inline-block px-8 py-3 text-base text-white font-semibold border-2 border-white rounded-lg bg-none [transition:all_0.5s_linear] hover:shadow-[inset_8rem_0_0_0_#fff,inset_-8rem_0_0_0_#fff] hover:text-deepPurple">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-midnightBlue text-white">
+    <div class="px-3 py-5 mx-auto max-w-6xl">
+      <div class="grid grid-cols-1 gap-5 py-6">
+        <div class="max-w-[250px] block mb-4">
+          <a href="index.html" class="text-white text-xl md:text-2xl flex items-center font-orbitron">
+            <span class="font-bold text-neonPink pe-2 me-2 uppercase">Future</span>School
+          </a>
+        </div>
+        <div class="">
+          <h4 class="pb-2 text-base font-normal uppercase text-neonBlue">Quick Links</h4>
+          <div class="grid grid-cols-1 gap-5 pb-8 border-b border-neonBlue/20 md:grid-cols-4">
+            <div>
+              <ul class="text-sm">
+                <li class="pb-2.5 text-base">
+                  <a href="index.html" class="text-gray-300 hover:text-neonBlue transition duration-300">Home</a>
+                </li>
+                <li class="pb-2.5 text-base">
+                  <a href="about.html" class="text-gray-300 hover:text-neonBlue transition duration-300">About</a>
+                </li>
+                <li class="pb-2.5 text-base">
+                  <a href="gallery.html" class="text-gray-300 hover:text-neonBlue transition duration-300">Gallery</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="text-sm">
+                <li class="pb-2.5 text-base">
+                  <a href="#ourteachers" class="text-gray-300 hover:text-neonBlue transition duration-300">Faculty</a>
+                </li>
+                <li class="pb-2.5 text-base">
+                  <a href="students.html" class="text-gray-300 hover:text-neonBlue transition duration-300">Students</a>
+                </li>
+                </li>
+                <li class="pb-2.5 text-base">
+                  <a href="contact.html" class="text-gray-300 hover:text-neonBlue transition duration-300">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="text-sm">
+                <li class="pb-2.5 text-base">
+                  <a href="#ourgoal" class="text-gray-300 hover:text-neonBlue transition duration-300">Mission & Vision</a>
+                </li>
+                <li class="pb-2.5 text-base">
+                  <a href="#ourcurriculum" class="text-gray-300 hover:text-neonBlue transition duration-300">Programs</a>
+                </li>
+                <li class="pb-2.5 text-base">
+                  <a href="#whyus" class="text-gray-300 hover:text-neonBlue transition duration-300">Why Choose Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="grid grid-cols-1 md:flex items-start gap-5 pb-8 border-b border-neonBlue/20 text-gray-300">
+            <div class="w-1/4">
+              <h4 class="pb-2 text-lg text-neonPink font-normal uppercase">
+                Contact
+              </h4>
+              <a href="tel:+1-555-FUTURE-1" class="pb-2.5 text-gray-300 hover:text-neonPink transition duration-300">+1-555-FUTURE-1</a>
+              <p class="mb-0">123 Innovation Avenue, Tech City, TC 54321</p>
+            </div>
+            <div>
+              <h4 class="pb-2 text-lg text-neonPink font-normal uppercase">
+                Connect
+              </h4>
+              <ul class="text-sm flex items-center gap-3">
+                <li class="pb-2.5 text-base">
+                  <a href="#"
+                    class="w-8 h-8 min-w-[32px] flex items-center justify-center rounded-full bg-neonBlue text-midnightBlue hover:bg-neonPink hover:text-white transition duration-300">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="pb-2.5 text-base">
+                  <a href="#"
+                    class="w-8 h-8 min-w-[32px] flex items-center justify-center rounded-full bg-neonBlue text-midnightBlue hover:bg-neonPink hover:text-white transition duration-300">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li class="pb-2.5 text-base">
+                  <a href="#"
+                    class="w-8 h-8 min-w-[32px] flex items-center justify-center rounded-full bg-neonBlue text-midnightBlue hover:bg-neonPink hover:text-white transition duration-300">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="pb-2.5 text-base">
+                  <a href="#"
+                    class="w-8 h-8 min-w-[32px] flex items-center justify-center rounded-full bg-neonBlue text-midnightBlue hover:bg-neonPink hover:text-white transition duration-300">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="flex items-start gap-5 pt-6 text-gray-300">
+            <div class="w-full">
+              <p>Copyright © 2024 Future School | Empowering the innovators of tomorrow</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <style>
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #1a0b2e;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #00f3ff;
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ff00ff;
+    }
+
+    .fade button.slick-arrow {
+      background-color: #00f3ff;
+      padding: 6px;
+      border-radius: 50%;
+      height: 36px;
+      width: 36px;
+    }
+
+    .fade button.slick-arrow:hover {
+      background-color: #ff00ff;
+    }
+
+    .fade button.slick-prev {
+      left: -22px;
+      z-index: 9;
+    }
+
+    .fade button.slick-arrow::before {
+      font-size: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+    }
+
+    .fade button.slick-next {
+      right: -22px;
+    }
+
+    .fade button.slick-prev::before {
+      border-right: 16px solid #1a0b2e;
+    }
+
+    .fade button.slick-next::before {
+      border-left: 16px solid #1a0b2e;
+    }
+
+    .fade .slick-dots {
+      text-align: left;
+      padding: 1.5rem 3rem;
+      bottom: 0;
+    }
+
+    .fade .slick-dots li,
+    .fade .slick-dots li button {
+      height: 10px;
+      width: 10px;
+    }
+
+    .fade .slick-dots li.slick-active {
+      width: 30px;
+    }
+
+    .fade .slick-dots li button:before {
+      background: #fff;
+      border-radius: 4px;
+      opacity: 0.5;
+      font-size: 0;
+      padding: 0;
+      width: 8px;
+      height: 8px;
+      content: "";
+      margin: 0 6px;
+    }
+
+    .fade .slick-dots li.slick-active button:before {
+      width: 30px !important;
+      height: 8px;
+      background: #00f3ff;
+      opacity: 1;
+      transition: 0.9s;
+    }
+
+    .dropdown {
+      display: block;
+    }
+
+
+    @media (max-width:1023px) {
+      .toggle-out {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        overflow-x: hidden;
+        transform: translateX(100%);
+        transition: all 0.3s linear;
+      }
+
+      .toggled {
+        display: block;
+        transform: translateX(0);
+      }
+
+      .fade button.slick-prev {
+        left: -8px;
+      }
+
+      .fade button.slick-next {
+        right: -8px;
+      }
+    }
+
+    @keyframes wave {
+      0% {
+        background-position: -15vw 100%;
+      }
+
+      50% {
+        background-position: -30vw 100%;
+      }
+
+      100% {
+        background-position: -15vw 100%;
+      }
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+      }
+
+      100% {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+  <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="assets/js/slick.js"></script>
+  <script>
+    $("#nav-click").click(function () {
+      $("#nav-show").toggleClass("toggled");
+    });
+    $(".nav-links").click(function () {
+      $(".nav-dropdown").toggleClass("dropdown");
+    });
+  </script>
+  <script>
+    $(".fade").slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: "linear",
+    });
+  </script>
+</body>
+
+</html>
